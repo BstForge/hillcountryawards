@@ -1,9 +1,23 @@
-- name: SFTP Deploy
-  uses: wlixcc/SFTP-Deploy-Action@v1.2
-  with:
-    server: panel.cmschlosser.com
-    port: 22
-    username: cms
-    ssh_private_key: ${{ secrets.SFTP_KEY }}
-    local_path: ./*
-    remote_path: /home/cms/web/awards.cmschlosser.com/public_html
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main   # change if your default branch is different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2
+        with:
+          server: panel.cmschlosser.com           # or your server IP
+          port: 22
+          username: cms
+          ssh_private_key: ${{ secrets.SFTP_KEY }}
+          local_path: ./*
+          remote_path: /home/cms/web/awards.cmschlosser.com/public_html
