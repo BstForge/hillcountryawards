@@ -1,12 +1,12 @@
-name: Deploy to Server
+name: deploy
 
 on:
   push:
     branches:
-      - main
+      - main   # or "master" if that's your default branch
 
 jobs:
-  deploy:
+  sftp-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -15,9 +15,9 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2
         with:
-          server: ${{ secrets.SFTP_HOST }}
-          port: 22
-          username: ${{ secrets.SFTP_USER }}
+          username: cms                          # your server username
+          server: panel.cmschlosser.com           # replace with your panel hostname or IP
+          port: 22                               # default SSH port
           ssh_private_key: ${{ secrets.SFTP_KEY }}
-          local_path: ./*
+          local_path: ./                         # deploy everything from repo root
           remote_path: /home/cms/web/awards.cmschlosser.com/public_html
