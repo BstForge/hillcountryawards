@@ -31,6 +31,6 @@
 </head>
 <body>
     <h1>Welcome to HCAT</h1>
-    <div class="footer">Copywrite 2025 <a href="http://www.cmschlosser.com">www.cmschlosser.com . All Rights Reserved.</a></div>
+    <div class="footer">Copywrite 2025 <a href="http://www.cmschlosser.com">www.cmschlosser.com . All Rights Reserved!!!</a></div>
 </body>
 </html>
