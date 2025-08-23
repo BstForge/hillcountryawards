@@ -7,30 +7,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/logo/QA1_symbol.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico">
   </head>
 <body>
   <?php include 'header.php'; ?>
 
   <main>
       <section class="hero">
-        <div class="slide active" style="background-image:url('images/hero/football1_slider3D_2.png');">
+        <div class="slide active" style="background-image:url('/images/hero/football1_slider3D_2.png');">
+          <div class="overlay"></div>
           <div class="caption">
             <h2>When Memories Matter</h2>
           </div>
         </div>
-        <div class="slide" style="background-image:url('images/hero/celebration_1SLD.jpg');">
+        <div class="slide" style="background-image:url('/images/hero/celebration_1SLD.jpg');">
+          <div class="overlay"></div>
           <div class="caption">
             <h2>Celebrate</h2>
           </div>
         </div>
-        <div class="slide" style="background-image:url('images/hero/Americabg3.jpg');">
+        <div class="slide" style="background-image:url('/images/hero/Americabg3.jpg');">
+          <div class="overlay"></div>
           <div class="caption">
             <h2>Reward</h2>
             <p>Commending hard work</p>
           </div>
         </div>
-        <div class="slide" style="background-image:url('images/hero/champ_girl1.png');">
+        <div class="slide" style="background-image:url('/images/hero/champ_girl1.png');">
+          <div class="overlay"></div>
           <div class="caption">
             <h2>Drive</h2>
             <p>Custom Recognition</p>
