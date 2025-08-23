@@ -1,14 +1,11 @@
 <?php
 header('Content-Type: text/css');
-$backgroundImage = isset($_GET['bg']) ? $_GET['bg'] : '';
 ?>
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: url(<?php echo $backgroundImage; ?>) no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    color: #000;
+    background-color: #f9fcff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,15 +15,20 @@ h1, h2, h3, h4, h5, h6 {
 header {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0.5rem 1rem;
+    background: transparent;
 }
 
 header img {
-    height: 50px;
+    height: 25px;
+    margin-left: 0.5rem;
+}
+
+header nav {
+    margin-left: 2rem;
 }
 
 header nav ul {
@@ -39,7 +41,18 @@ header nav ul {
 
 header nav a {
     text-decoration: none;
-    color: inherit;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header nav a.active {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
 }
 
 main section {
@@ -49,11 +62,20 @@ main section {
     border-radius: 4px;
 }
 
+main {
+    min-height: 800px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 0.5rem 0;
+    color: #f0f0f0;
+}
+
+footer a {
+    color: inherit;
 }
