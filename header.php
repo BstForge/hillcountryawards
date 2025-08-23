@@ -1,6 +1,6 @@
 <header>
   <div class="logo">
-    <a href="index.php"><img src="images/logo.png" alt="Hill Country Awards &amp; Trophies logo"></a>
+    <a href="index.php"><img src="images/logo/HCAT_logoSM.png" alt="Hill Country Awards &amp; Trophies logo"></a>
   </div>
   <div class="menu-toggle" onclick="toggleMenu()">
     <span></span>
