@@ -1,4 +1,14 @@
 <?php
-$backgroundImage = "/images/hero/Americabg3.jpg";
-$contentFolder = __DIR__ . "/content/index/";
-include __DIR__ . "/layout.php";
+// Placeholder index file
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hill Country Awards</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h1>Coming Soon</h1>
+</body>
+</html>
