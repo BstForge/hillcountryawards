@@ -11,11 +11,9 @@
             background-color: #f9fcff;
             background-image: url('<?php echo htmlspecialchars($backgroundImage, ENT_QUOTES); ?>');
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-attachment: scroll;
             background-position: top center;
             background-size: cover;
-            height: 100vh;
-            width: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
