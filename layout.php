@@ -11,7 +11,7 @@
             background-color: #f9fcff;
             background-image: url('<?php echo htmlspecialchars($backgroundImage, ENT_QUOTES); ?>');
             background-repeat: no-repeat;
-            background-attachment: scroll;
+            background-attachment: fixed;
             background-position: top center;
             background-size: cover;
             height: 100vh;

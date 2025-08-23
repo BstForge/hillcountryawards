@@ -17,18 +17,20 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0.5rem 1rem;
     background: transparent;
 }
 
 header img {
-    height: 25px;
-    margin-left: 0.5rem;
+    height: 12.5px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 header nav {
-    margin-left: 2rem;
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 header nav ul {
@@ -41,8 +43,8 @@ header nav ul {
 
 header nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 1.32rem;
     transition: color 0.3s;
 }
 
