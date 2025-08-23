@@ -18,15 +18,15 @@
         <h1 class="tagline">When Memories Matter</h1>
         <div class="carousel">
           <div class="slide active">
-            <img src="images/hero/hero_football.png" alt="Football Trophy">
+            <img src="images/hero/football1_slider3D_2.png" alt="Football Trophy">
             <p>Rewarding Success with Perfection</p>
           </div>
           <div class="slide">
-            <img src="images/hero/hero_champ_girl.png" alt="Champion Girl">
+            <img src="images/hero/champ_girl1.png" alt="Champion Girl">
             <p>Effort Rewarded</p>
           </div>
           <div class="slide">
-            <img src="images/hero/hero_celebration.jpg" alt="Celebration">
+            <img src="images/hero/celebration_1SLD.jpg" alt="Celebration">
             <p>Celebrate Every Victory</p>
           </div>
           <button class="prev" aria-label="Previous slide">&#10094;</button>
@@ -37,7 +37,7 @@
 
     <section class="about-preview">
       <div class="about-image">
-        <img src="images/about/about_interior.jpg" alt="Inside Hill Country Awards">
+        <img src="images/about/interior6-about-pic2.jpg" alt="Inside Hill Country Awards">
       </div>
       <div class="about-text">
         <h2>Welcome to Hill Country Awards &amp; Trophies</h2>
@@ -49,12 +49,12 @@
     <section class="showcase">
       <h2>Our Products</h2>
       <div class="showcase-grid">
-        <a href="awards.php"><img src="images/showcase/auto.png" alt="Auto"></a>
-        <a href="awards.php"><img src="images/showcase/trophy.png" alt="Trophy"></a>
-        <a href="awards.php"><img src="images/showcase/eagle.png" alt="Eagle"></a>
-        <a href="awards.php"><img src="images/showcase/gourmet.png" alt="Gourmet"></a>
-        <a href="awards.php"><img src="images/showcase/leather.png" alt="Leather"></a>
-        <a href="awards.php"><img src="images/showcase/drinkware.png" alt="Drinkware"></a>
+        <a href="awards.php"><img src="images/showcase/auto_site.png" alt="Auto"></a>
+        <a href="awards.php"><img src="images/showcase/trophy_site-1.png" alt="Trophy"></a>
+        <a href="awards.php"><img src="images/showcase/EAGLE.png" alt="Eagle"></a>
+        <a href="awards.php"><img src="images/showcase/gormet_site.png" alt="Gourmet"></a>
+        <a href="awards.php"><img src="images/showcase/LEATHER.png" alt="Leather"></a>
+        <a href="awards.php"><img src="images/showcase/DRINKWARE.png" alt="Drinkware"></a>
         <a href="awards.php"><img src="images/showcase/crystal.png" alt="Crystal"></a>
       </div>
     </section>
