@@ -60,6 +60,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
   position: relative;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   color: #fff;
@@ -70,13 +71,12 @@ nav a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -86,8 +86,19 @@ nav a:hover {
   opacity: 1;
 }
 
-.hero .caption {
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.hero .caption {
+  position: relative;
+  z-index: 1;
   padding: 20px;
   border-radius: 4px;
 }
