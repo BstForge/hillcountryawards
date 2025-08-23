@@ -8,26 +8,33 @@
     <link rel="stylesheet" href="/css/style.css">
     <style>
         body {
-            background: url('<?php echo htmlspecialchars($backgroundImage, ENT_QUOTES); ?>') no-repeat center center fixed;
+            background-color: #f9fcff;
+            background-image: url('<?php echo htmlspecialchars($backgroundImage, ENT_QUOTES); ?>');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: top center;
             background-size: cover;
             height: 100vh;
+            width: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
+            color: #000;
         }
     </style>
     <title>Hill Country Awards & Trophies</title>
 </head>
 <body>
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
 <header>
     <img src="/images/logo/HCAT_logoSM.png" alt="Hill Country Awards &amp; Trophies">
     <nav>
         <ul>
-            <li><a href="/index.php">Home</a></li>
-            <li><a href="/awards.php">Awards &amp; Trophies</a></li>
-            <li><a href="/about.php">About</a></li>
-            <li><a href="/clients.php">Clients</a></li>
-            <li><a href="/contact.php">Contact</a></li>
+            <li><a href="/index.php" class="<?php echo $currentPage === 'index.php' ? 'active' : ''; ?>">Home</a></li>
+            <li><a href="/awards.php" class="<?php echo $currentPage === 'awards.php' ? 'active' : ''; ?>">Awards &amp; Trophies</a></li>
+            <li><a href="/about.php" class="<?php echo $currentPage === 'about.php' ? 'active' : ''; ?>">About</a></li>
+            <li><a href="/clients.php" class="<?php echo $currentPage === 'clients.php' ? 'active' : ''; ?>">Clients</a></li>
+            <li><a href="/contact.php" class="<?php echo $currentPage === 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -41,7 +48,7 @@ foreach ($files as $file) {
 ?>
 </main>
 <footer>
-    <p>&copy; Hill Country Awards &amp; Trophies</p>
+    <p>&copy; 2025 Hill Country Awards &amp; Trophies | Site designed and hosted by <a href="https://www.cmschlosser.com">Fiction Author C.M. Schlosser</a></p>
 </footer>
 </body>
 </html>
