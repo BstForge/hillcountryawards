@@ -5,6 +5,7 @@ if (!isset($background)) {
 if (!isset($content)) {
     $content = '';
 }
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +13,7 @@ if (!isset($content)) {
     <meta charset="UTF-8">
     <title>Hill Country Awards</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logos/favicon.ico">
 </head>
 <body style="background-image: url('<?= htmlspecialchars($background, ENT_QUOTES) ?>');">
     <div class="wrapper">
@@ -21,9 +23,11 @@ if (!isset($content)) {
             </a>
             <nav>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="awards.php">Awards</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="index.php" class="<?= $current_page == 'index.php' ? 'active' : '' ?>">Home</a></li>
+                    <li><a href="awards.php" class="<?= $current_page == 'awards.php' ? 'active' : '' ?>">Awards &amp; Trophies</a></li>
+                    <li><a href="about.php" class="<?= $current_page == 'about.php' ? 'active' : '' ?>">About</a></li>
+                    <li><a href="clients.php" class="<?= $current_page == 'clients.php' ? 'active' : '' ?>">Clients</a></li>
+                    <li><a href="contact.php" class="<?= $current_page == 'contact.php' ? 'active' : '' ?>">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,8 +36,8 @@ if (!isset($content)) {
         </main>
     </div>
     <footer>
-        &copy; <?= date('Y') ?> Hill Country Awards
+        &copy; 2025 Hill Country Awards | Website Design and Hosting by <a href="https://www.cmschlosser.com" target="_blank" rel="noopener noreferrer">Fiction Author C.M. Schlosser</a>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
 
