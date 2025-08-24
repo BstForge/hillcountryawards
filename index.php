@@ -1,14 +1,10 @@
 <?php
-// Placeholder index file
+$background = 'images/hero/bus1_home.jpg';
+ob_start();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hill Country Awards</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-</head>
-<body>
-    <h1>Coming Soon</h1>
-</body>
-</html>
+<h1>Welcome to Hill Country Awards</h1>
+<p>Your source for custom awards and engravings.</p>
+<?php
+$content = ob_get_clean();
+include 'layout.php';
+
