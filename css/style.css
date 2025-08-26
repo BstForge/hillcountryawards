@@ -68,7 +68,7 @@ nav a.active {
 main {
     max-width: 800px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     padding: 20px;
 }
 
@@ -98,7 +98,7 @@ footer a {
 .carousel {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
 }
 .carousel .slide {
@@ -114,7 +114,7 @@ footer a {
     display: block;
 }
 .carousel img {
-    height: 100%;
+    height: 300px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
