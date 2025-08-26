@@ -19,13 +19,20 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding-top: 60px; /* space for fixed header */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -33,7 +40,7 @@ header {
 }
 
 .logo img {
-    max-height: 80px;
+    max-height: 40px;
 }
 
 nav {
@@ -55,7 +62,7 @@ nav a {
 }
 
 nav a.active {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 main {
@@ -67,9 +74,23 @@ main {
 
 footer {
     margin-top: auto;
-    background: rgba(0, 0, 0, 0.6);
+    background: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    text-align: left;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-contact p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.9em;
 }
 
