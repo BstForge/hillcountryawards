@@ -1,84 +1,145 @@
-<?php
-header('Content-Type: text/css');
-?>
-body {
+/* Global reset and background handling */
+html, body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    background-color: #f9fcff;
+    padding: 0;
+    height: 100%;
+    min-height: 800px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dancing Script', cursive;
-    color: #000;
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* space for fixed header */
 }
 
 header {
-    position: sticky;
-    top: 0;
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0.5rem 0;
-    background: transparent;
+    padding: 10px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-header img {
-    height: 12.5px;
-    margin-left: 20px;
+.logo {
+    padding-left: 20px;
 }
 
-header nav {
-    margin: 0 auto;
+.logo img {
+    max-height: 40px;
 }
 
-header nav ul {
+nav {
+    padding-right: 20px;
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 20px;
 }
 
-header nav a {
+nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #fff;
-}
-
-header nav a.active {
-    border-bottom: 1px solid #fff;
     font-weight: bold;
 }
 
-main section {
-    padding: 1rem;
-    margin: 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
+nav a.active {
+    border-bottom: 2px solid #fff;
 }
 
 main {
-    min-height: 800px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: transparent;
+    padding: 20px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: transparent;
-    text-align: center;
-    padding: 0.5rem 0;
-    color: #f0f0f0;
+    margin-top: auto;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
 }
 
 footer a {
-    color: inherit;
+    color: #fff;
 }
+
+.footer-contact p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.carousel .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+}
+.carousel .slide:first-child {
+    display: block;
+}
+.carousel img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+.carousel .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+

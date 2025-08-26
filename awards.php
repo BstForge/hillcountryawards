@@ -1,4 +1,10 @@
 <?php
-$backgroundImage = "/images/hero/celebration_1SLD.jpg";
-$contentFolder = __DIR__ . "/content/awards/";
-include __DIR__ . "/layout.php";
+$background = 'images/hero/champ_girl1.png';
+ob_start();
+?>
+<h1>Awards &amp; Trophies</h1>
+<p>Explore our collection of trophies, plaques, and medals.</p>
+<?php
+$content = ob_get_clean();
+include 'layout.php';
+

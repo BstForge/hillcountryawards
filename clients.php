@@ -1,4 +1,9 @@
 <?php
-$backgroundImage = "/images/hero/bus1_home.jpg";
-$contentFolder = __DIR__ . "/content/clients/";
-include __DIR__ . "/layout.php";
+$background = 'images/hero/football.png';
+ob_start();
+?>
+<h1>Clients</h1>
+<p>See the clients we proudly serve.</p>
+<?php
+$content = ob_get_clean();
+include 'layout.php';
