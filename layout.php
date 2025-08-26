@@ -36,7 +36,16 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </main>
     </div>
     <footer>
-        &copy; 2025 Hill Country Awards | Website Design and Hosting by <a href="https://www.cmschlosser.com" target="_blank" rel="noopener noreferrer">Fiction Author C.M. Schlosser</a>
+        <div class="footer-contact">
+            <p><strong>ABOUT HILL COUNTRY AWARDS</strong></p>
+            <p>37 Years of excellence in Customer Service &amp; Quality</p>
+            <p>512.756.6712</p>
+            <p><a href="mailto:info@hillcountryawards.com">info@hillcountryawards.com</a></p>
+            <p>409 Industrial Blvd, St 1000<br>Burnet, Tx 78611</p>
+        </div>
+        <div class="footer-copy">
+            &copy; 2025 Hill Country Awards | Website Design and Hosting by <a href="https://www.cmschlosser.com" target="_blank" rel="noopener noreferrer">Fiction Author C.M. Schlosser</a>
+        </div>
     </footer>
     </body>
     </html>
