@@ -47,6 +47,28 @@ $current_page = basename($_SERVER['PHP_SELF']);
             &copy; 2025 Hill Country Awards | Website Design and Hosting by <a href="https://www.cmschlosser.com" target="_blank" rel="noopener noreferrer">Fiction Author C.M. Schlosser</a>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.carousel');
+            if (!carousel) return;
+            const slides = carousel.querySelectorAll('.slide');
+            let index = 0;
+            const total = slides.length;
+            const nextBtn = carousel.querySelector('.next');
+            const prevBtn = carousel.querySelector('.prev');
+            function show(i) {
+                slides.forEach((s, idx) => { s.style.display = idx === i ? 'block' : 'none'; });
+                index = i;
+            }
+            function next() { show((index + 1) % total); }
+            function prev() { show((index - 1 + total) % total); }
+            let timer = setInterval(next, 5000);
+            function resetTimer() { clearInterval(timer); timer = setInterval(next, 5000); }
+            nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+            prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+            show(0);
+        });
+    </script>
     </body>
     </html>
 
